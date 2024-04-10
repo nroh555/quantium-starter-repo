@@ -11,6 +11,7 @@ colors = {
 
 # Read the CSV files
 df1 = pd.read_csv("data/output.csv")
+df1 = df1.sort_values(by="date")
 
 df = pd.DataFrame({
     "Year": df1['date'],
